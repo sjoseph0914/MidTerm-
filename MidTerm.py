@@ -1,33 +1,36 @@
 #1. 7 
-#2.(b^n)-1
+#2.(b^n)
 #3
 def totalBill(x): 
   checkAmount=x +(.15*x)
-  print checkAmount 
+  return checkAmount 
 #4
 def newpic(): 
   pic = makeEmptyPicture(200,200, (makeColor(18,52,86)))
   show(pic)
 
 #5
-def fibList(fib):
-  d1 = 1
-  d2 = 1
-  fibList = []
-  if fib>0:
-    fibList.append(d1)
-  if fib>1:
-    fibList.append(d2)
-  for num in range (0, fib):
-    v = d1+ d2
-    fibList.append(v)
-    d1 + d2
-    d2 = v
-  print fibList
+def fib(n):
+  if n<=0:
+   return 
+  if n>=1: 
+    print 1 
+    d1=1
+  if n>=2:
+    print 1
+    d2=1
+  for num in range (n-2):
+     v = d1+ d2
+     print v
+     d1=d2
+     d2 = v
+
+
 #6 
 def List():
-  a=[1, 2, 3, 4, 5]
-  print a 
+  a=[1,2,3,4,5]
+  print a
+  
 #7
 def problem7():
   pic=makeEmptyPicture(800,800, white)
